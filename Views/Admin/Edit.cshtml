@@ -1,0 +1,48 @@
+﻿@model RichardAde.Models.Product
+
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="grid-container">
+        <h4>Edit Product - @Model.Name</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="medium-6 cell">
+            @Html.LabelFor(model => model.Name, new { @class = "control-label col-md-2" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.Name)
+                @Html.ValidationMessageFor(model => model.Name)
+            </div>
+        </div>
+        <div class="medium-6 cell">
+            @Html.LabelFor(model => model.Description, new { @class = "control-label col-md-2" })
+            <div class="medium-6 cell">
+                @Html.EditorFor(model => model.Description)
+                @Html.ValidationMessageFor(model => model.Description)
+            </div>
+        </div>
+
+        <div class="grid-x grid-padding-x align-center">
+
+            <div class="cell small-4">
+                <button class="submit success button">Save</button>
+            </div>
+
+
+
+            <div class="cell small-4">
+                @Html.ActionLink("Back to product list", "Index")
+            </div>
+
+        </div>
+    </div>
+}

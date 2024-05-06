@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - RichardAde</title>
+
+    
+    
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+          integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer" />
+    @* <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/css/foundation.min.css"
+          crossorigin="anonymous" /> *@
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="stylesheet" href="~/css/foundation.min.css" />
+    <link rel="stylesheet" href="~/css/home.css" type="text/css" />
+    <link rel="stylesheet" href="~/RichardAde.styles.css" type="text/css" />
+    @RenderSection("Styles", false)
+</head>
+<body>
+    <header>
+        <div class="section-1">
+            <div class="nav-container">
+                <div class="logo-container">
+                    <p>OPTICRON</p>
+                    <p style="visibility: hidden">LOGOIMAGE</p>
+                </div>
+
+                <div class="navigation">
+                    <nav class="">
+                        <a>Our Products</a>
+                        <a>Where to buy</a>
+                        <a>News and Reviews</a>
+                        <a>Help and Support</a>
+                        <a>My Opinion</a>
+                    </nav>
+
+                    <div class="input-container">
+                        <input type="text" placeholder="My Opticron" />
+                        <i class="fa-solid fa-magnifying-glass"
+                           id="search-icon"
+                           onclick=""></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-container-small">
+                <div class="logo-container-small">
+                    <p>OPTICRON</p>
+                </div>
+
+
+                <div class="navigation-small">
+                    <nav class="" id="sidemenu">
+                        <div class="sidemenu-box">
+                            <i class="fa-solid fa-xmark fa-xl"
+                               id="close-icon"
+                               onclick="closemenu()"></i>
+                            <a>Our Products</a>
+                            <a>Where to buy</a>
+                            <a>News and Reviews</a>
+                            <a>Help and Support</a>
+                            <a>My Opinion</a>
+                        </div>
+
+                    </nav>
+                </div>
+                <div class="menu-container">
+                    <p>Menu</p>
+                    <i class="fa-solid fa-bars fa-xl"
+                       id="clone-icon2"
+                       onclick="openmenu()"></i>
+                </div>
+            </div>
+            <div class="input-container-small">
+                <input type="text" placeholder="My Opticron" />
+                <i class="fa-solid fa-magnifying-glass" id="search-icon" onclick=""></i>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="" style="width: 100%; height: 50%; background-color: gray">
+        <div class="footer-container">
+            <div class="left-side">
+                <p>
+                    Opticron Unit 21, Titan Court, Laporte Way, Luton, Bedfordshire, LU4
+                    8EF, UK
+                </p>
+                <p class="sites">Site map/Terms/Site by Verto</p>
+            </div>
+
+            <div class="right-side">
+                <div class="contact-1">
+                    <p>Call 01582 726522</p>
+                    <p style="font-size: 17px">email us </p>
+                </div>
+                <div class="contact-2">
+                    <i class="fa-brands fa-facebook-f" id="icon"></i>
+                    <i class="fa-brands fa-twitter" id="icon"></i>
+                    <i class="fa-brands fa-linkedin" id="icon"></i>
+                    <i class="fa-brands fa-google" id="icon"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    @* <script src="~/lib/jquery/dist/jquery.min.js"></script> *@
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

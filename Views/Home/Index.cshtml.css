@@ -1,0 +1,609 @@
+﻿
+.section-2 {
+    width: 100%;
+    height: 50%;
+}
+
+.picture-slider-container {
+    width: 100%;
+}
+
+
+.slick-dots {
+    position: absolute;
+    top: 85%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 9999;
+}
+
+    .slick-dots li button {
+        display: block;
+        width: 90% !important;
+        height: 90% !important;
+        border-radius: 80%;
+        background-color: #ccc;
+        border: none;
+        cursor: pointer;
+    }
+
+.section-3 {
+    width: 100%;
+}
+
+.product-container {
+    padding: 1.5rem;
+}
+
+.product-container-tablet {
+    display: none;
+}
+
+.product-offer {
+    background-color: grey;
+    padding: 5rem;
+}
+
+.product-offer-inner {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.product-offer-container {
+    padding: 12rem;
+    margin-bottom: -10%;
+    margin-top: -20%;
+}
+
+    .product-offer-container h1 {
+        text-align: center;
+        font-size: 35px;
+        color: grey;
+    }
+
+.product-inner h1 {
+    font-size: 25px;
+    margin-top: 10px;
+    color: gray;
+}
+
+.product-inner p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.product-blog {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 12rem;
+    margin-top: -8%;
+}
+
+#product-blog {
+    display: flex;
+    padding: 13rem;
+    margin-top: -10%;
+    justify-content: space-evenly;
+}
+
+.product-inner button {
+    width: 70%;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    background-color: green;
+}
+
+.offer-content {
+    width: 100%;
+    text-align: center;
+    line-height: 35%;
+    padding: 3px;
+    margin-top: -1%;
+    padding-bottom: 10px;
+}
+
+.offer-content p {
+    font-size: 13px;
+}
+
+.offer-content span {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.center-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-offer button {
+    width: 20%;
+    padding: 10px;
+    margin-top: 5%;
+    color: #fff;
+    cursor: pointer;
+    background-color: green;
+}
+
+.footer-container {
+    display: flex;
+    padding: 5rem;
+    justify-content: space-around;
+}
+
+.left-side p {
+    color: #fff;
+}
+
+.left-side {
+    display: block;
+    line-height: 5px;
+}
+
+.contact-1 p {
+    font-size: 25px;
+    color: #fff;
+}
+
+.contact-2 #icon {
+    color: #fff;
+    font-size: 25px;
+}
+
+#clone-icon2 {
+    display: none;
+}
+
+#close-icon {
+    display: none;
+}
+
+.nav-container-small {
+    display: none;
+}
+
+.input-container-small {
+    display: none;
+}
+
+.product-categories h1 {
+    font-size: 35px;
+}
+
+.sub-section-3 {
+    display: none;
+}
+
+.sub-section-4 {
+    display: none;
+}
+
+.contact-2 {
+    margin-top: 30%;
+}
+
+.left-side .sites {
+    margin-top: 25%
+}
+
+.prev-arrow,
+.next-arrow {
+    background-color: #fff;
+    padding: 5px;
+    margin-top: 5rem;
+    cursor: pointer;
+    color: gray;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+    .section-1 {
+        position: fixed;
+        width: 100%;
+        z-Index: 2;
+        top: 0
+    }
+
+    .navigation-small nav {
+        background: #fff;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100%;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.8s;
+    }
+
+    .nav-container {
+        display: none;
+    }
+
+    .nav-container-small {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0%;
+        padding: 1.5rem;
+    }
+
+    #clone-icon2 {
+        display: block;
+        width: 70%;
+        height: 70%;
+        margin-left: 15%;
+        margin-top: 10%;
+        color: green;
+        cursor: pointer;
+    }
+
+    #close-icon {
+        display: block;
+        color: green;
+        cursor: pointer;
+    }
+
+    .logo-container-small p {
+        font-size: 27px;
+        color: green;
+    }
+
+    .menu-container {
+        padding: 1rem;
+        display: flex;
+    }
+
+        .menu-container p {
+            font-size: 13px;
+            margin-top: -10%;
+            margin-right: 5%;
+        }
+
+    nav .sidemenu-box a {
+        display: block;
+        font-size: 15px;
+        margin: 14px;
+    }
+
+    nav .sidemenu-box {
+        padding: 10%;
+        position: relative;
+        bottom: 12px;
+    }
+
+    .input-container-small input {
+        width: 50%;
+        position: relative;
+        left: 32%;
+    }
+
+    .input-container-small {
+        display: flex;
+        width: 100%;
+        align-content: right;
+    }
+
+        .input-container-small #search-icon {
+            background: grey;
+            height: 70%;
+            margin-left: 32%;
+            margin-bottom: 2px;
+            padding: 12px;
+            color: #fff;
+        }
+
+    .product-container {
+        padding: 1.5rem;
+    }
+
+    .product-blog {
+        padding: 0rem;
+        margin-top: 20%;
+    }
+
+    .product-inner img {
+        width: 100%;
+    }
+
+    .grid-margin-x {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+
+    .product-offer-container {
+        display: none;
+    }
+
+    .product-categories {
+        display: none;
+    }
+
+    .sub-section-3 {
+        display: block;
+        width: 100%;
+    }
+
+    .product-offer-container-small h1 {
+        text-align: center;
+        color: gray;
+    }
+
+    .product-offer-container-small .product-offer {
+        padding: 5%;
+    }
+
+    #product-card-small {
+        margin-bottom: 20%;
+    }
+
+    .center-btn-small {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .center-btn-small button {
+            width: 40%;
+            margin-top: 2%;
+            color: #fff;
+            cursor: pointer;
+            background-color: green;
+        }
+
+    .sub-section-4 {
+        display: block;
+        width: 100%;
+        margin-top: 20%;
+    }
+
+    #product-blog-small {
+        display: flex;
+        margin-top: 20%;
+    }
+
+    .product-categories-small {
+        height: 60%;
+        margin-top: 20%;
+    }
+
+    .product-inner-small p {
+        font-size: 12px;
+    }
+
+    .footer-container .left-side p {
+        font-size: 15px;
+    }
+
+    .footer-container {
+        display: block;
+        padding: 7%;
+    }
+
+    .contact-2 {
+        margin-top: 0%;
+    }
+
+    .left-side .sites {
+        margin-top: 0%;
+    }
+
+    .slick-carousel-3,
+    .prev-arrow,
+    .next-arrow {
+        background-color: #fff;
+        padding: 5px;
+        margin-top: 5rem;
+        cursor: pointer;
+        color: gray;
+        transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 640px) {
+    .navigation-small nav {
+        background: #fff;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.8s;
+    }
+
+    .nav-container {
+        display: none;
+    }
+
+    .nav-container-small {
+        display: flex;
+        justify-content: space-between;
+        margin: 0%;
+        padding: 1.5rem;
+    }
+
+    #clone-icon2 {
+        display: block;
+        width: 70%;
+        height: 70%;
+        margin-left: 15%;
+        margin-top: 10%;
+        color: green;
+        cursor: pointer;
+    }
+
+    #close-icon {
+        display: block;
+        color: green;
+        cursor: pointer;
+    }
+
+    .logo-container-small p {
+        font-size: 27px;
+        color: green;
+    }
+
+    .menu-container {
+        padding: 1rem;
+        display: flex;
+    }
+
+        .menu-container p {
+            font-size: 13px;
+            margin-top: -10%;
+            margin-right: 5%;
+        }
+
+    nav .sidemenu-box a {
+        display: block;
+        font-size: 15px;
+        margin: 14px;
+    }
+
+    nav .sidemenu-box {
+        padding: 10%;
+        position: relative;
+        bottom: 12px;
+    }
+
+    .input-container-small input {
+        width: 50%;
+        position: relative;
+        left: 32%;
+    }
+
+    .input-container-small {
+        display: flex;
+        width: 100%;
+        align-content: right;
+    }
+
+        .input-container-small #search-icon {
+            background: grey;
+            height: 70%;
+            margin-left: 32%;
+            margin-bottom: 2px;
+            padding: 12px;
+            color: #fff;
+        }
+
+    .product-container {
+        padding: 1.5rem;
+    }
+
+    .product-blog {
+        padding: 0rem;
+        margin-top: 10%;
+    }
+
+    .product-inner img {
+        width: 100%;
+    }
+
+    .grid-margin-x {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+
+    .product-offer-container {
+        display: none;
+    }
+
+    .product-categories {
+        display: none;
+    }
+
+    .sub-section-3 {
+        display: block;
+        width: 100%;
+    }
+
+    .product-offer-container-small h1 {
+        text-align: center;
+        color: gray;
+    }
+
+    .product-offer-container-small .product-offer {
+        padding: 5%;
+    }
+
+    #product-card-small {
+        margin-bottom: 20%;
+    }
+
+    .center-btn-small {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .center-btn-small button {
+            width: 40%;
+            margin-top: 2%;
+            color: #fff;
+            cursor: pointer;
+            background-color: green;
+        }
+
+    .sub-section-4 {
+        display: block;
+        width: 100%;
+        margin-top: 20%;
+    }
+
+    #product-blog-small {
+        display: flex;
+        padding: 2rem;
+        margin-top: 20%;
+    }
+
+    .product-categories-small {
+        height: 60%;
+        margin-top: 20%;
+    }
+
+    .product-inner-small p {
+        font-size: 12px;
+    }
+
+    .footer-container .left-side p {
+        font-size: 15px;
+    }
+
+    .footer-container {
+        display: block;
+        padding: 7%;
+    }
+
+    .contact-2 {
+        margin-top: 0%;
+    }
+
+    .left-side .sites {
+        margin-top: 0%;
+    }
+
+    .slick-carousel-3,
+    .prev-arrow,
+    .next-arrow {
+        background-color: #fff;
+        padding: 5px;
+        margin-top: 10rem;
+        cursor: pointer;
+        color: gray;
+        transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1025px) {
+}
+
+@media (min-width: 1025px) and (max-width: 1350px) {
+}
