@@ -12,6 +12,18 @@ body {
     padding: 1.5rem;
     width: 100%;
 }
+.image-1 {
+    background-position-y:40px;
+    height: 500px;
+}
+.image-2 {
+    background-position-y: 40px;
+    height: 500px;
+}
+.image-3 {
+    background-position-y: 40px;
+    height: 500px;
+}
 
 .logo-container {
     display: flex;
@@ -435,6 +447,19 @@ input {
         cursor: pointer;
         color: gray;
         transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+    .image-1 {
+        background-position-y: 40px;
+        height:500px;
+    }
+    .image-2 {
+        background-position-y: 40px;
+        height: 500px;
+    }
+
+    .image-3 {
+        background-position-y: 40px;
+        height: 500px;
     }
 }
 
